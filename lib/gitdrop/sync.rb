@@ -2,11 +2,11 @@ module GitDrop
   class Sync
     def initialize(directory)
       @directory = directory
-      `pwd #{@directory}`
+      `pwd '#{@directory}'`
     end
 
     def run
-      puts "SYNCING: #{@directory}"
+      GitDrop.message "Syncing: #{@directory}"
       puts `git status`
     end
   end
