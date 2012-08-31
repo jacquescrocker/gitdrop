@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>ai.lizi.gitdrop</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/jc/OpenSource/Misc/gitdrop/gitdrop</string>
+  </array>
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>OnDemand</key>
+  <false/>
+  <key>KeepAlive</key>
+  <false/>
+
+  <key>StartInterval</key>
+  <integer>60</integer>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/jc/Projects/Lizi/wiki</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/jc/Projects/Lizi/wiki/.gitdrop/error.log</string>
+  <key>StandardOutPath</key>
+  <string>/Users/jc/Projects/Lizi/wiki/.gitdrop/output.log</string>
+
+</dict>
+</plist>
