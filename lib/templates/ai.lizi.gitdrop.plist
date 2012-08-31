@@ -3,11 +3,12 @@
 <plist version="1.0">
 <dict>
   <key>Label</key>
-  <string>ai.lizi.gitdrop</string>
+  <string>%label%</string>
 
   <key>ProgramArguments</key>
   <array>
-    <string>/Users/jc/OpenSource/Misc/gitdrop/gitdrop</string>
+    <string>%executable%</string>
+    <string>sync</string>
   </array>
   <key>RunAtLoad</key>
   <true/>
@@ -18,14 +19,16 @@
   <false/>
 
   <key>StartInterval</key>
-  <integer>60</integer>
+  <integer>%interval%</integer>
 
   <key>WorkingDirectory</key>
-  <string>/Users/jc/Projects/Lizi/wiki</string>
+  <string>%workingdirectory%</string>
+
   <key>StandardErrorPath</key>
-  <string>/Users/jc/Projects/Lizi/wiki/.gitdrop/error.log</string>
+  <string>%configdirectory%/error.log</string>
+
   <key>StandardOutPath</key>
-  <string>/Users/jc/Projects/Lizi/wiki/.gitdrop/output.log</string>
+  <string>%configdirectory%/output.log</string>
 
 </dict>
 </plist>

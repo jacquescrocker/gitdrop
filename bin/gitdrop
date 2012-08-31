@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
+require File.expand_path("../../lib/gitdrop.rb", __FILE__)
 
-
-puts "HELLO"
+GitDrop::CLI.new(ARGV).run
