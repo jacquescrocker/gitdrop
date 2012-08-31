@@ -1,25 +1,25 @@
-# Git Sync
+# Git Drop
 
 a Ruby hack for OSX that autosync a git repo every X seconds
 
-warning: this is a horrible hack and shouldn't be used by anyone
-
+**warning:** this is a horrible hack and shouldn't be used by anyone
 
 
 ## Install
 
-- git clone
+- Clone to somewhere on your computer
 
-- add the bin folder to your PATH
+    `git clone https://github.com/railsjedi/gitdrop.git`
+
+- add the gitdrop/bin folder to your PATH
 
 - cd into the folder you want to start syncing
 
-- gitsync start
+- `gitdrop start`
 
-    this will start watching this folder
+    this will start watching this folder (creates and loads a launchd agent)
 
-
-- gitsync stop
+- `gitdrop stop`
 
     this will stop watching this folder (unloads and deletes the launchd agent)
 
