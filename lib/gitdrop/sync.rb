@@ -7,7 +7,11 @@ module GitDrop
 
     def run
       GitDrop.message "Syncing: #{@directory}"
-      puts `git status`
+
+      puts `git add .`
+      puts `git commit -am 'auto saving (with GitDrop)'`
+      puts `git pull`
+      puts `git push`
     end
   end
 end
